@@ -61,8 +61,10 @@ function App() {
     newUser.id = id;
 
     const newUsers = users.filter((user) => user.id !== id);
+    const unOrderedUsers = [...newUsers, newUser];
+    const orderedUsers = unOrderedUsers.sort((a, b) => a.id - b.id);
 
-    setUser([...newUsers, newUser]);
+    setUser(orderedUsers);
   };
 
   const startEditing = (id) => {
