@@ -1,0 +1,17 @@
+body {
+  font-family: "Reggae One", cursive;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 3px,
+      transparent 0,
+      transparent 7px
+    )
+    rgb(27, 27, 27);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
